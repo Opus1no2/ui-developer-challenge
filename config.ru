@@ -1,4 +1,18 @@
-# This file is used by Rack-based servers to start the application.
+# Load path and gems/bundler
+$LOAD_PATH << File.expand_path(File.dirname(__FILE__))
 
-require ::File.expand_path('../config/environment', __FILE__)
-run Rails.application
+require "bundler"
+Bundler.require
+
+# Local config
+require "find"
+
+%w{config/initializers lib}.each do |load_path|
+  Find.find(load_path) { |f|
+    require f unless f.match(/\/\..+$/) || File.directory?(f)
+  }
+end
+
+# Load app
+require "ui_challenge"
+run UiChallenge

@@ -10,7 +10,7 @@ We want to see your amazing UI development skills in action!  Please take 2 hour
 
 * Check out [MaterializeCSS form elements](http://materializecss.com/forms.html) for an example interaction on the input fields. But, wait!  We want to see your original work, so please try to avoid direct usage of code examples.
 
-* Get the Rails app running on your computer and work your magic to bring our Sketch file to life! SCSS and Coffeescript files are included by default, but you may change those to CSS and Javascript files if you wish.
+* rackup config.ru
 
 ### When you're done
 Please email us a zip file containing all the folders in your Github project. You can also fork the project and push it to your own public repo, if you don't mind it being publicly viewable.
